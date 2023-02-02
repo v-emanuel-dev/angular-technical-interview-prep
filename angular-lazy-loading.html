@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Victor Pacheco - v.emanuel.pacheco@gmail.com" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="ano  nymous"></script>
+  <link rel="icon" href="src/img/favicon.ico" type="image/x-icon" />
+  <title>Angular Technical Interview Prep</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="src/img/2048px-Angular_full_color_logo.svg.png" alt="Angular Logo" height="33"
+          class="d-inline-block align-text-top" />
+        Angular Technical Interview Prep
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-about.html">About Angular</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-cli.html">Angular CLI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-common-questions.html">Angular Common Questions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-experience.html">Angular Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-input-and-output.html">Angular Input and Output</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-interceptors.html">Angular Interceptors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-redux.html">Angular Redux</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-api-connect.html">Angular API Connect</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-architectural-approaches.html">Angular Architectural Approaches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-expected-questions.html">Angular Expected Questions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-interview-possible-questions.html">Angular Interview Possible
+              Questions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-interview-prep.html">Angular Interview Prep</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-key-features.html">Angular Key Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-large-scale-complex.html">Angular Large Scale Complex</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-lazy-loading.html">Angular Lazy Loading</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-nx.html">Angular NX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-oauth.html">Angular OAuth</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-5">
+    <img src="src/img/2048px-Angular_full_color_logo.svg.png" width="10%" height="10%" alt="Angular Logo"
+      class="img-fluid text-center d-block mx-auto" />
+    <h1 class="text-center">Lazy Loading</h1>
+    <p>
+      Lazy loading is a technique in Angular that allows you to defer the loading of parts of your application until
+      they are actually needed. This can greatly improve the performance of your application, as it reduces the amount
+      of JavaScript code that needs to be loaded and parsed by the browser, making your application start faster and run
+      smoother.
+    </p>
+    <p>
+      Here are some of the benefits of using lazy loading in Angular:
+    </p>
+    <p>
+      Faster Initial Load Time: By deferring the loading of unnecessary code, lazy loading can significantly reduce the
+      initial load time of your application, making it more responsive and user-friendly.
+    </p>
+    <p>
+      Improved User Experience: With lazy loading, users can start using the most important parts of your application
+      faster, without having to wait for all of the code to load and parse. This can lead to a better user experience,
+      as users can start using the application sooner and with less frustration.
+    </p>
+    <p>
+      Better Memory Management: By loading code only when it's needed, lazy loading can help reduce memory usage, as the
+      browser won't need to keep as much code in memory. This can lead to improved performance, especially on mobile
+      devices with limited memory.
+    </p>
+    <p>
+      Here's how you can use lazy loading in a real-world scenario:
+    </p>
+    <p>
+      Load Modules Lazily: In Angular, you can use the loadChildren property of the Route to specify that a module
+      should be loaded lazily. When the user navigates to the route, the module will be loaded on-demand, instead of
+      being loaded up front.
+    </p>
+    <p>
+      Use a Dynamic Import Statement: You can use a dynamic import statement to load a module only when it's needed.
+      This can be especially useful if you have a large application with many modules, and you don't want to load them
+      all up front.
+    </p>
+    <p>
+      Use Lazy-Loaded Components: You can use lazy-loaded components to defer the loading of a component until it's
+      actually needed. This can be especially useful if you have a large component that takes a long time to load, and
+      you don't want to slow down the initial load time of your application.
+    </p>
+    <p>
+      By using lazy loading in Angular, you can make your application faster and more responsive, improving the user
+      experience and reducing server load. Whether you're loading modules, components, or simply deferring the loading
+      of unnecessary code, lazy loading can help you achieve your goals in a real-world scenario.
+    </p>
+    <a href="https://www.linkedin.com/in/emanuel-victor-web/" target="_blank">LinkedIn</a>
+    </p>
+  </div>
+</body>
+
+</html>

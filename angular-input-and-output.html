@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Victor Pacheco - v.emanuel.pacheco@gmail.com" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="ano  nymous"></script>
+  <link rel="icon" href="src/img/favicon.ico" type="image/x-icon" />
+  <title>Angular Technical Interview Prep</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="src/img/2048px-Angular_full_color_logo.svg.png" alt="Angular Logo" height="33"
+          class="d-inline-block align-text-top" />
+        Angular Technical Interview Prep
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-about.html">About Angular</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-cli.html">Angular CLI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-common-questions.html">Angular Common Questions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-experience.html">Angular Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-input-and-output.html">Angular Input and Output</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-interceptors.html">Angular Interceptors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-redux.html">Angular Redux</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-api-connect.html">Angular API Connect</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-architectural-approaches.html">Angular Architectural Approaches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-expected-questions.html">Angular Expected Questions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-interview-possible-questions.html">Angular Interview Possible
+              Questions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-interview-prep.html">Angular Interview Prep</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-key-features.html">Angular Key Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-large-scale-complex.html">Angular Large Scale Complex</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-lazy-loading.html">Angular Lazy Loading</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-nx.html">Angular NX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-oauth.html">Angular OAuth</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-5">
+    <img src="src/img/2048px-Angular_full_color_logo.svg.png" width="10%" height="10%" alt="Angular Logo"
+      class="img-fluid text-center d-block mx-auto" />
+    <h1 class="text-center">Input and Output in Angular</h1>
+
+    <p>
+      Input and Output in Angular are used to pass data between components. Input allows data to be passed from a parent
+      component to a child component, while Output allows data to be passed from a child component to a parent
+      component.
+    </p>
+    <p>
+      Dependency injection is a software design pattern in which components are given their dependencies instead of hard
+      coding them within the component. This makes it easier to maintain and test the components, as well as make it
+      easier to reuse the components in different parts of the application.
+    </p>
+    <p>
+      Here are a few real-world scenarios where dependency injection and input/output can be applied:
+    </p>
+    <p>
+      Component Communication: Input/output can be used to pass data between components, making it easier to build
+      modular and reusable components. Additionally, dependency injection can be used to manage the dependencies of
+      these components, making it easier to maintain and test the components.
+    </p>
+    <p>
+      Reusability: Dependency injection and input/output can also be used to make components more reusable. By injecting
+      dependencies into components and passing data between components using input/output, you can create components
+      that can be easily reused in different parts of the application.
+    </p>
+    <p>
+      Service Layer: Dependency injection can also be used to manage services in your application, such as HTTP services
+      for making API calls. By injecting services into components, you can make it easier to maintain and test the
+      components, as well as make it easier to reuse the services in different parts of the application.
+    </p>
+    <p>
+      Testing: Dependency injection can also make it easier to test your components, as you can inject mocks or stubs of
+      the dependencies into the components, making it easier to isolate and test the components.
+    </p>
+    <p>
+      In each of these scenarios, dependency injection and input/output can provide significant benefits, including
+      improved maintainability, better modularity, and improved testability. Additionally, by using dependency injection
+      and input/output, you can take advantage of the best practices and patterns of Angular, making it easier to build
+      sophisticated and scalable applications.
+    </p>
+    <a href="https://www.linkedin.com/in/emanuel-victor-web/" target="_blank">LinkedIn</a>
+    </p>
+  </div>
+</body>
+
+</html>

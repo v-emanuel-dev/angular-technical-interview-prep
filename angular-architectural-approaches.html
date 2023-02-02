@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Victor Pacheco - v.emanuel.pacheco@gmail.com" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="ano  nymous"></script>
+  <link rel="icon" href="src/img/favicon.ico" type="image/x-icon" />
+  <title>Angular Technical Interview Prep</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="src/img/2048px-Angular_full_color_logo.svg.png" alt="Angular Logo" height="33"
+          class="d-inline-block align-text-top" />
+        Angular Technical Interview Prep
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-about.html">About Angular</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-cli.html">Angular CLI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-common-questions.html">Angular Common Questions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-experience.html">Angular Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-input-and-output.html">Angular Input and Output</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-interceptors.html">Angular Interceptors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-redux.html">Angular Redux</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-api-connect.html">Angular API Connect</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-architectural-approaches.html">Angular Architectural Approaches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-expected-questions.html">Angular Expected Questions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-interview-possible-questions.html">Angular Interview Possible
+              Questions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-interview-prep.html">Angular Interview Prep</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-key-features.html">Angular Key Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-large-scale-complex.html">Angular Large Scale Complex</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-lazy-loading.html">Angular Lazy Loading</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-nx.html">Angular NX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-oauth.html">Angular OAuth</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-5">
+    <img src="src/img/2048px-Angular_full_color_logo.svg.png" width="10%" height="10%" alt="Angular Logo"
+      class="img-fluid text-center d-block mx-auto" />
+    <h1 class="text-center">Angular Architectural Approaches</h1>
+    <p>
+      There are several different architectural approaches you can use when building an Angular application, each with
+      its own set of trade-offs and benefits. Here are some of the most common ones:
+    </p>
+    <p>
+      Component-Based Architecture: This is the default architecture used in Angular, where the application is built
+      using components. Components are the building blocks of an Angular application, and they contain the HTML, CSS,
+      and JavaScript required to render a portion of the user interface.
+    </p>
+    <p>
+      NGRX: NGRX is a popular state management library for Angular, and it uses reactive programming concepts to manage
+      the state of your application. NGRX provides a centralized store for your application's state, making it easier to
+      manage and update the state of your application, as well as respond to changes in the state.
+    </p>
+    <p>
+      Microfrontends: Microfrontends are a way of breaking down a monolithic frontend into smaller, more manageable
+      pieces. This can make your application easier to develop and maintain, as well as improve the performance and
+      scalability of your application.
+    </p>
+    <p>
+      Domain-Driven Design (DDD): DDD is an architectural pattern that focuses on separating the application into
+      distinct domains, each with its own set of rules and behaviors. This can make your application easier to
+      understand and maintain, as well as improve its ability to scale and evolve over time.
+    </p>
+    <p>
+      Clean Architecture: Clean Architecture is an architectural pattern that emphasizes separation of concerns and the
+      use of dependency injection to make your code more modular and testable. This can make your application easier to
+      maintain and improve its overall quality.
+    </p>
+    <p>
+      Model-View-Presenter (MVP): MVP is an architectural pattern that separates the presentation logic from the
+      business logic, making it easier to write and maintain your code. This can also make it easier to test your
+      application, as you can write tests for the presentation and business logic separately.
+    </p>
+    <p>
+      Each of these architectural approaches has its own set of benefits and trade-offs, and the best one for you will
+      depend on the specific requirements of your application. However, by using one or more of these approaches, you
+      can create a more scalable, maintainable, and testable Angular application.
+    </p>
+    <a href="https://www.linkedin.com/in/emanuel-victor-web/" target="_blank">LinkedIn</a>
+    </p>
+  </div>
+</body>
+
+</html>

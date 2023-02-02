@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Victor Pacheco - v.emanuel.pacheco@gmail.com" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="ano  nymous"></script>
+  <link rel="icon" href="src/img/favicon.ico" type="image/x-icon" />
+  <title>Angular Technical Interview Prep</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="src/img/2048px-Angular_full_color_logo.svg.png" alt="Angular Logo" height="33"
+          class="d-inline-block align-text-top" />
+        Angular Technical Interview Prep
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-about.html">About Angular</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-cli.html">Angular CLI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-common-questions.html">Angular Common Questions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-experience.html">Angular Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-input-and-output.html">Angular Input and Output</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-interceptors.html">Angular Interceptors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-redux.html">Angular Redux</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-api-connect.html">Angular API Connect</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-architectural-approaches.html">Angular Architectural Approaches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-expected-questions.html">Angular Expected Questions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-interview-possible-questions.html">Angular Interview Possible
+              Questions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-interview-prep.html">Angular Interview Prep</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-key-features.html">Angular Key Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-large-scale-complex.html">Angular Large Scale Complex</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-lazy-loading.html">Angular Lazy Loading</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-nx.html">Angular NX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="angular-oauth.html">Angular OAuth</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-5">
+    <img src="src/img/2048px-Angular_full_color_logo.svg.png" width="10%" height="10%" alt="Angular Logo"
+      class="img-fluid text-center d-block mx-auto" />
+    <h1 class="text-center">OAuth</h1>
+
+    <p>
+      OAuth is an open standard for authorization that allows users to securely delegate access to their resources on
+      one website to another website without sharing their credentials. In other words, it enables a third-party
+      application to obtain limited access to an HTTP service, such as a REST API, on behalf of a resource owner.
+    </p>
+    <p>
+      To implement OAuth in a real-world scenario, you would typically follow these steps:
+    </p>
+    <p>
+      Register your application with the OAuth provider (e.g. Google, Facebook, etc.) to obtain client credentials such
+      as a client ID and client secret.
+    </p>
+    <p>
+      Integrate the OAuth provider's authorization server into your Angular application. This typically involves
+      redirecting the user to the authorization server to authenticate and authorize your application to access their
+      resources.
+    </p>
+    <p>
+      Once the user has authorized your application, the authorization server will redirect the user back to your
+      application with an authorization code.
+    </p>
+    <p>
+      Your application can then exchange the authorization code for an access token and refresh token, which can be used
+      to access the user's resources.
+    </p>
+    <p>
+      Your Angular application can use the access token to make API calls to the OAuth provider's resource server and
+      retrieve the user's resources.
+    </p>
+    <p>
+      When the access token expires, your application can use the refresh token to obtain a new access token.
+    </p>
+    <p>
+      In Angular, you can implement OAuth by using a library such as Angular-OAuth2-OIDC, which provides a simple and
+      flexible way to integrate OAuth into your Angular application.
+    <p>
+      It is important to note that OAuth should be used with caution, as it involves exchanging sensitive information
+      such as access tokens and refresh tokens. To ensure the security of your implementation, it is recommended to use
+      secure protocols such as HTTPS, to properly validate and secure your tokens, and to follow best practices for
+      s8ecuring OAuth in your Angular application.
+    </p>
+    <a href="https://www.linkedin.com/in/emanuel-victor-web/" target="_blank">LinkedIn</a>
+    </p>
+  </div>
+</body>
+
+</html>
